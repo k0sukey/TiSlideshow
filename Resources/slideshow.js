@@ -26,6 +26,7 @@ exports.Slideshow = (function(global){
 		self.width = options.width || 320;
 		self.height = options.height || 480;
 		self.duration = options.duration || 2000;
+		self.timeout = options.timeout || 1000;
 		self.images = options.images || [];
 
 		if (options.idleTimerDisabled) {
@@ -122,7 +123,7 @@ exports.Slideshow = (function(global){
 
 				self.pointer++;
 
-				setTimeout(kenBurns, self.duration);
+				setTimeout(kenBurns, self.timeout);
 			});
 		};
 

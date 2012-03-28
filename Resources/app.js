@@ -12,6 +12,7 @@ var slideshowView = app.slideshow.createSlideshowView({
 	width: window.width,
 	height: window.height,
 	duration: 2000,
+	timeout: 1000,
 	images: [ 'images/image00.jpg', 'images/image01.jpg', 'images/image02.jpg' ]
 });
 window.add(slideshowView);
